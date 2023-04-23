@@ -1,0 +1,125 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+/* BODY */
+body{
+    font-family: 'Inter', sans-serif;
+}
+/* NAVBAR */
+#nav{
+    display: flex;
+    justify-content:space-between;
+    padding: 1.5%;
+    background-color: white;
+}
+#nav img{
+    width: 5%;
+    cursor: pointer;
+}
+#nav p{
+    border: 2px solid black;
+    border-radius: 10%;
+    padding: 1%;
+    margin-bottom: 1%;
+    cursor: pointer;
+}
+
+/* FIRSTSECTION */
+#firstSection{
+    margin-bottom: 5%;
+}
+#header{
+    line-height: 1.7;
+    text-align: center;
+    padding: 0% 5%;
+}
+#header h1{
+    /* font-size: 60px; */
+    font-size: 375%;
+    font-weight: bolder;
+}
+#header p{
+    font-size: 150%;
+}
+#header button{
+    font-size: 125%;
+    padding: 1.5%;
+    margin-top: 3%;
+    cursor: pointer;
+    border: 2px solid #000;
+    box-shadow: 3px 3px 0 #000;
+    border-radius: 5px;
+    color: white;
+    background: #576CBC;
+}
+
+/* SECOND SECTION */
+#secondSection{
+    display: flex;
+    padding: 6%;
+    border: 2px solid #000;
+    background: #0B2447;
+    margin: 8% 0%;
+}
+.features{
+    border: 2px solid #000;
+    border-right: 1px solid #000;
+    background-color: white;
+    border-radius: 1%;
+    padding: 3%;
+    text-align: center;
+}
+#lastBox{
+    border-right: 2px solid #000;
+}
+.features img{
+    width: 35%;
+    margin-bottom: 6%;
+}
+.features h2{
+    font-weight: bolder;
+    margin-bottom: 12%;
+}.features p{
+    font-size: 111%;
+}
+
+/* THIRD SECTION */
+#certificateForm{
+    text-align: center;
+    line-height: 1.7;
+}
+#certificateForm h1{
+    font-size: 312.5%;
+    font-weight: bold;
+}
+#certificateForm p{
+    font-size: 150%;
+}
+#createForm{
+    padding: 7%;
+}
+#createForm form{
+    border: 2px solid black;
+    border-radius: 1%;
+    color: white;
+    background-image:linear-gradient(to top left,#576CBC,black);
+    font-size: 187.5%;
+    padding: 5%;
+}
+#form input{
+    height: 40px; 
+    font-size: 20px;
+    border-radius: 10px;
+}
+#form button{
+    font-size: 20px;
+    padding: 1.5%;
+    width: 17%;
+    cursor: pointer;
+    background-color: #007aff;
+    border-color: transparent;
+    color: #fff;
+    border-radius: 5px;
+}
+
