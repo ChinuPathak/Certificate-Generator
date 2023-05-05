@@ -6,4 +6,9 @@ router.get('/', (req, res)=>{
     res.render('login');
 });
 
+router.post('/', (req, res)=>{
+    console.log(req.body);
+    res.send(req.body);
+})
+
 module.exports = router;
