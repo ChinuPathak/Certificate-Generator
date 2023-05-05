@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Certificate Generator</title>
+    <link rel="stylesheet" href="./style/index.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <nav id="nav">
+        <a href="/login">
+            <img src="image/biaslogo.jpeg" alt="">
+            <p id="logIn">Log in</p>
+        </a>
+    </nav>
+
+    <!-- FIRST SECTION -->
+    <div id="firstSection">
+        <div id="header">
+            <h1><strong>Online Certificate Maker</strong></h1>
+            <p>Generate beautiful certificates for your students or colleagues and download in PDF format</p>
+            <a href="#footer">
+                <button>Create a Certificate Now</button>
+            </a>
+        </div>
+    </div>
+
+    <!-- SECOND SECTION -->
+    <div id="secondSection">
+        <div class="features">
+            <img src="https://d33wubrfki0l68.cloudfront.net/d8b217a2d3ce65fd55f2d6ee88b4b854ffe34e62/de214/images/icons/iconfinder_document-check_266790.png"
+                alt="">
+            <h2><strong>Instant Download</strong></h2>
+            <p>Create certificates online and download instantly as a PDF — no signup or payment required</p>
+        </div>
+        <div class="features">
+            <img src="https://d33wubrfki0l68.cloudfront.net/7c2c905eb18ba7c6cb7110389000c4f790406d72/9c925/images/icons/iconfinder_expand-2_266778.png"
+                alt="">
+            <h2><strong>Auto Resizing</strong></h2>
+            <p>Bannerbear auto-resizes text so you don't have to worry about people with long names</p>
+        </div>
+        <div class="features">
+            <img src="https://d33wubrfki0l68.cloudfront.net/6c7dbf471d541ebda657020af260ff9e58509fb2/4d4c5/images/icons/iconfinder_settings_430115.png"
+                alt="">
+            <h2><strong>Customization</strong></h2>
+            <p>Change certificate settings to your liking such as font colors, font styles and more</p>
+        </div>
+        <div class="features" id="lastBox">
+            <img src="https://d33wubrfki0l68.cloudfront.net/11509d102b1db27322c9a20ae6f03b8099929161/08ef5/images/icons/speak.png"
+                alt="">
+            <h2><strong>Multilingual</strong></h2>
+            <p>Certificates support languages such as English, Chinese, Japanese, Arabic and more</p>
+        </div>
+    </div>
+
+    <!-- THIRD SECTION -->
+    <div id="thirdSection">
+        <div id="certificateForm">
+            <h1>Create Your Certificate</h1>
+            <p>Enter some values and hit Create PDF to get your files</p>
+        </div>
+        <div id="createForm">
+            <form action="" id="form">
+                <label for="">Name</label><br>
+                <input type="text" size="40"><br><br>
+                <label for="">Subtitle</label><br>
+                <input type="text" size="40"><br><br>
+                <label for="">Date</label><br>
+                <input type="text" size="40"><br><br>
+                <label for="">Signature</label><br>
+                <input type="text" size="40"><br><br>
+                <button id="pdfDownload">Create PDF</button>
+            </form>
+
+        </div>
+
+    </div>
+
+    <!-- FORTH SECTION -->
+    <footer id="footer"></footer>
+    <script src="./script/index.js"></script>
+</body>
+
+</html>
