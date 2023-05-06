@@ -7,7 +7,7 @@ const app = express();
 app.set('view engine','ejs');
 app.set('views', './views');
 app.use(express.static('public'));
-const bodyParseUser = (bodyParse.urlencoded({extended: false}));
+const bodyParseUser = (bodyParse.urlencoded({extended: true}));
 
 // Routes
 const homeRouter = require('./routes/homeRoute');
