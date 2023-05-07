@@ -1,16 +1,18 @@
-body{
+body {
     margin: 0;
     padding: 0;
 }
 
-.certificate_frame{
+.certificate_frame {
     height: 100vh;
     width: 80%;
     margin: 5em;
+    outline: 5px solid black;
+    outline-offset: 10px;
     border: 1px solid black;
 }
 
-.footer{
+.footer {
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
