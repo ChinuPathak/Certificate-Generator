@@ -7,19 +7,22 @@ body {
 }
 
 .certificate {
-    width: 800px;
-    height: 600px;
-    margin: 50px auto;
+    width: 80%;
+    height: 150vh;
+    margin: 5em auto;
     position: relative;
-    background-image: url("certificate-background.jpg");
-    background-size: cover;
-    border: 1px solid #000000;
+    /* background-image: url(../resource/Certificate_Background.png);
+    background-size: contain;
+    background-repeat: no-repeat; */
+    border: 2px solid #000000;
+    padding: 1em;
 }
 
 .certificate h1 {
+    font-weight: bolder;
     text-align: center;
-    font-size: 42px;
-    margin-top: 200px;
+    font-size: 2em;
+    margin-top: 8em;
     text-transform: uppercase;
     color: #000000;
 }
@@ -27,8 +30,9 @@ body {
 .certificate p {
     text-align: center;
     font-size: 24px;
+    line-height: 2.5em;
     margin-top: 50px;
-    text-transform: uppercase;
+    /* text-transform: uppercase; */
     color: #000000;
 }
 
@@ -40,10 +44,20 @@ body {
     color: #000000;
 }
 
+.certificate .signature img {
+    position: absolute;
+    bottom: 2.5em;
+    right: 2.5em;
+    width: 7em;
+    height: 4em;
+    border: 1px solid black;
+}
+
 .certificate .logo {
     position: absolute;
     top: 50px;
-    left: 50px;
+    left: 47%;
+    transform: translateX(-50%);
     width: 150px;
     height: 150px;
 }
