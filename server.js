@@ -12,8 +12,10 @@ const bodyParseUser = (bodyParse.urlencoded({extended: true}));
 // Routes
 const homeRouter = require('./routes/homeRoute');
 const loginRouter = require('./routes/loginRoute');
+const certificateRouter = require('./routes/certificate');
 
 app.use('/', homeRouter);
 app.use('/login', bodyParseUser,loginRouter);
+app.use('/certificate',bodyParseUser,certificateRouter);
 
 app.listen(process.env.PORT, console.log(`Server Started at ${process.env.PORT}`));
