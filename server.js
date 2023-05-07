@@ -12,7 +12,7 @@ const bodyParseUser = (bodyParse.urlencoded({extended: true}));
 // Routes
 const homeRouter = require('./routes/homeRoute');
 const loginRouter = require('./routes/loginRoute');
-const certificateRouter = require('./routes/certificate');
+const certificateRouter = require('./routes/certificateDash');
 
 app.use('/', homeRouter);
 app.use('/login', bodyParseUser,loginRouter);

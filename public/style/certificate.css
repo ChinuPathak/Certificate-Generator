@@ -7,9 +7,9 @@ body {
 }
 
 .certificate {
-    width: 80%;
+    width: 100%;
     height: 150vh;
-    margin: 5em auto;
+    /* margin: 5em auto; */
     position: relative;
     /* background-image: url(../resource/Certificate_Background.png);
     background-size: contain;
