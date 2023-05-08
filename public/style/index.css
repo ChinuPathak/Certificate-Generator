@@ -1,23 +1,32 @@
-*{
+* {
     margin: 0px;
     padding: 0px;
 }
+
 /* BODY */
-body{
+body {
     font-family: 'Inter', sans-serif;
 }
+
 /* NAVBAR */
-#nav{
-    display: flex;
-    justify-content:space-between;
+#nav {
+    width: 90%;
     padding: 1.5%;
     background-color: white;
+    display: flex;
+    justify-content: space-between;
 }
-#nav img{
-    width: 5%;
+
+#nav img {
+    width: 50%;
     cursor: pointer;
 }
-#nav p{
+
+#nav p {
+    position: absolute;
+    top: 5%;
+    right: 3%;
+    text-align: center;
     border: 2px solid black;
     border-radius: 10%;
     padding: 1%;
@@ -26,23 +35,27 @@ body{
 }
 
 /* FIRSTSECTION */
-#firstSection{
+#firstSection {
     margin-bottom: 5%;
 }
-#header{
+
+#header {
     line-height: 1.7;
     text-align: center;
     padding: 0% 5%;
 }
-#header h1{
+
+#header h1 {
     /* font-size: 60px; */
     font-size: 375%;
     font-weight: bolder;
 }
-#header p{
+
+#header p {
     font-size: 150%;
 }
-#header button{
+
+#header button {
     font-size: 125%;
     padding: 1.5%;
     margin-top: 3%;
@@ -55,14 +68,15 @@ body{
 }
 
 /* SECOND SECTION */
-#secondSection{
+#secondSection {
     display: flex;
     padding: 6%;
     border: 2px solid #000;
     background: #0B2447;
     margin: 8% 0%;
 }
-.features{
+
+.features {
     border: 2px solid #000;
     border-right: 1px solid #000;
     background-color: white;
@@ -70,49 +84,60 @@ body{
     padding: 3%;
     text-align: center;
 }
-#lastBox{
+
+#lastBox {
     border-right: 2px solid #000;
 }
-.features img{
+
+.features img {
     width: 35%;
     margin-bottom: 6%;
 }
-.features h2{
+
+.features h2 {
     font-weight: bolder;
     margin-bottom: 12%;
-}.features p{
+}
+
+.features p {
     font-size: 111%;
 }
 
 /* THIRD SECTION */
-#certificateForm{
+#certificateForm {
     text-align: center;
     line-height: 1.7;
 }
-#certificateForm h1{
+
+#certificateForm h1 {
     font-size: 312.5%;
     font-weight: bold;
 }
-#certificateForm p{
+
+#certificateForm p {
     font-size: 150%;
 }
-#createForm{
+
+#createForm {
     padding: 7%;
 }
-#createForm form{
+
+#createForm form {
     border: 2px solid black;
     border-radius: 1%;
     color: white;
-    background-image:linear-gradient(to top left,#576CBC,black);
+    background-image: linear-gradient(to top left, #576CBC, black);
     font-size: 187.5%;
     padding: 5%;
 }
-#form input{
-    height: 40px; 
+
+#form input {
+    height: 40px;
     font-size: 20px;
     border-radius: 10px;
 }
-#form button{
+
+#form button {
     font-size: 20px;
     padding: 1.5%;
     width: 17%;
@@ -122,4 +147,3 @@ body{
     color: #fff;
     border-radius: 5px;
 }
-
