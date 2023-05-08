@@ -26,5 +26,14 @@ const certificateRouter = require('./routes/certificateDash');
 app.use('/', homeRouter);
 app.use('/login', bodyParseUser, loginRouter);
 app.use('/certificate', bodyParseUser, certificateRouter);
+app.get('*', (req, res) => {
+    res.status(404).render('errorPage', { status: 404, url: req.url });
+});
+// app.use(function (err, req, res, next) {
+//     res.render('500', {
+//         status: err.status || 500
+//         , error: err
+//     });
+// });
 
 app.listen(process.env.PORT, console.log(`Server Started at ${process.env.PORT}`));
