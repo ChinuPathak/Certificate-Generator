@@ -46,7 +46,7 @@ generatePDF('https://www.example.com', 'example.pdf')
 
   */
 async function generatePDF(url, outputPath) {
-  const browser = await puppeteer.launch();
+  const browser = await puppeteer.launch({headless: true});
   const page = await browser.newPage();
 
   await page.goto(url, { waitUntil: 'networkidle2' });
@@ -57,16 +57,18 @@ async function generatePDF(url, outputPath) {
 
 router.post('/', (req, res) => {
   data = req.body.event;
-  res.render('certificateDash');
+  res.setHeader('Content-Type', 'text/html');
+  res.status(200).render('certificateDash');
 });
 
 router.get('/show', (req, res) => {
   res.render('certificate', { data })
+  res.status(303);
   res.redirect('/certificate');
 });
 
 router.get('/download', (req, res) => {
-  generatePDF('http://localhost:5000/certificate/show', 'certificate.pdf')
+  generatePDF('http://localhost:5000/certificate/show', '../certificate.pdf')
     .then(() => console.log('PDF generated successfully'))
     .catch(err => console.error(err));
   res.redirect('/login/dashboard');
