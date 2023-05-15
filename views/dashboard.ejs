@@ -14,7 +14,9 @@
         integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
     <title>Dashboard</title>
     <link rel="stylesheet" href="./style/dashboard.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+        integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 
 <body>
@@ -30,7 +32,8 @@
             </div>
             <div id="buttons">
                 <a href="/"><button class="btn btn-primary"><i class="fa-solid fa-house"></i></button></a>
-                <a href="/login"><button class="btn btn-primary">Logout <i class="fa-solid fa-arrow-right"></i></button></a>
+                <a href="/login"><button class="btn btn-primary">Logout <i
+                            class="fa-solid fa-arrow-right"></i></button></a>
             </div>
         </div>
         <hr>
@@ -56,6 +59,13 @@
                 <div class="mb-2">
                     <label for="date" class="form-label">Date: </label>
                     <input type="date" name="event[date]" id="date" class="form-control">
+                </div>
+                <div class="mb-2">
+                    <label for="theme" class="form-label">Theme: </label>
+                    <select name="event[theme]" id="theme">
+                        <option value="theme1">Theme 1</option>
+                        <option value="theme2">Theme 2</option>
+                    </select>
                 </div>
 
                 <button type="submit" class="btn btn-primary">Submit</button>
