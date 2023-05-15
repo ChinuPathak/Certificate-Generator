@@ -1,11 +1,4 @@
-/* Certificate Styles */
-/* chinu pathak */
-body {
-    font-family: 'Times New Roman', serif;
-    margin: 0;
-    padding: 0;
-    background-color: #FFFFFF;
-}
+/* Basic Certificate Styles */
 
 .certificate {
     width: 100%;
@@ -52,13 +45,4 @@ body {
     width: 7em;
     height: 4em;
     border: 1px solid black;
-}
-
-.certificate .logo {
-    position: absolute;
-    top: 50px;
-    left: 47%;
-    transform: translateX(-50%);
-    width: 150px;
-    height: 150px;
 }
